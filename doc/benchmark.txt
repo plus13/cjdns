@@ -1711,3 +1711,22 @@ $ git log | head -n 1
 commit 13189fde111d0500427a7a0ce06a970753527bca
 $ uname -r
 3.2.0-4-amd64
+
+
+ODROID-C2
+---------
+[root@alarm tmp]# cjdroute --bench                
+1469308520 INFO Benchmark.c:62 Benchmark salsa20/poly1305 in 4555ms. 263446 kilobits per second
+1469308525 INFO Benchmark.c:62 Benchmark Switching in 5308ms. 192916 packets per second
+
+[root@alarm alarm]# cat /proc/cpuinfo       
+processor       : 0
+BogoMIPS        : 2.00
+Features        : fp asimd crc32
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+Hardware        : ODROID-C2
+Revision        : 020b
